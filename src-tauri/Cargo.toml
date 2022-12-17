@@ -1,7 +1,7 @@
 [package]
-name = "supabase-desktop"
+name = "supabase"
 version = "0.0.0"
-description = "A Tauri App"
+description = "A Supabase Desktop App"
 authors = ["you"]
 license = ""
 repository = ""

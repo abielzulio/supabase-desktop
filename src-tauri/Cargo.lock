@@ -2496,7 +2496,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "supabase-desktop"
+name = "supabase"
 version = "0.0.0"
 dependencies = [
  "serde",

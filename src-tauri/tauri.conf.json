@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "supabase-desktop",
+    "productName": "Supabase",
     "version": "0.0.1"
   },
   "tauri": {
