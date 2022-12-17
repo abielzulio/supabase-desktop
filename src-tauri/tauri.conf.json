@@ -3,11 +3,12 @@
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist"
+    "distDir": "../dist",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "supabase-desktop",
-    "version": "0.0.0"
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -28,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.abielzulio.supabase-desktop",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -54,11 +55,13 @@
     },
     "windows": [
       {
+        "userAgent": "chrome",
+        "url": "https://app.supabase.com/projects",
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
-        "title": "supabase-desktop",
-        "width": 800
+        "title": "Supabase",
+        "width": 1000
       }
     ]
   }
