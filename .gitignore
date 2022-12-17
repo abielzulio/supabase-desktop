@@ -1,3 +1,5 @@
 dist
 node_modules
 src-tauri/target
+.DS_Store
+*/.DS_Store
