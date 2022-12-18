@@ -59,6 +59,7 @@
         "url": "https://app.supabase.com/projects",
         "fullscreen": false,
         "height": 800,
+        "center": true,
         "resizable": true,
         "title": "Supabase",
         "width": 1000
