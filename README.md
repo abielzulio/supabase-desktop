@@ -28,14 +28,14 @@ Yes, it is totally safe. No, I don't store your login credentials as I have no c
 
 ### I can't install. What's happening?
 
-![CleanShot 2022-12-18 at 23 29 58](https://user-images.githubusercontent.com/7030944/208308948-6e85409a-d3e8-46cb-b1fe-ca9adb463f9e.png)
+![Warning pop-up](https://user-images.githubusercontent.com/7030944/208308948-6e85409a-d3e8-46cb-b1fe-ca9adb463f9e.png)
 
 
 1. Close the warning pop-up by clicking the `Cancel` button
 1. Go to `System Settings > Privacy & Security`
 2. Click `Open Anyway` in the Supabase warning section
 
-![CleanShot 2022-12-18 at 23 34 32](https://user-images.githubusercontent.com/7030944/208309192-1c370c21-c45b-4004-ba4b-bf472427ce23.png)
+![Resolve step-by-step](https://user-images.githubusercontent.com/7030944/208309192-1c370c21-c45b-4004-ba4b-bf472427ce23.png)
 
 
 ## Recommended IDE Setup
