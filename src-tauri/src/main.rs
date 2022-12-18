@@ -5,7 +5,11 @@
 
 
 use tauri::{api::{shell}, Context, utils::assets::EmbeddedAssets};
-use tauri::{Manager, CustomMenuItem, Menu, MenuItem, Submenu, AboutMetadata, MenuEntry};
+use tauri::{Manager, CustomMenuItem, Menu, MenuItem, Submenu, MenuEntry};
+
+#[cfg(target_os = "macos")]
+use tauri::{AboutMetadata};
+
 
 pub fn custom_window_menu(ctx: &Context<EmbeddedAssets>) -> Menu {
   let menu = Menu::with_items([
@@ -40,14 +44,13 @@ pub fn custom_window_menu(ctx: &Context<EmbeddedAssets>) -> Menu {
       ]),
     )),
 
-    #[cfg(not(target_os = "macos"))] {
-      MenuEntry::Submenu(Submenu::new(
-        "File",
-        Menu::with_items([
-          MenuItem::Quit.into()
-        ])
-      ));
-    },
+    #[cfg(not(target_os = "macos"))]
+    MenuEntry::Submenu(Submenu::new(
+      "File",
+      Menu::with_items([
+        MenuItem::Quit.into()
+      ])
+    )),
 
     MenuEntry::Submenu(Submenu::new(
       "Window",
