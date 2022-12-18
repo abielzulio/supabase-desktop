@@ -1,5 +1,5 @@
 <p align="center">
-<img width=100 src="https://github.com/abielzulio/supabase-desktop/blob/release/src-tauri/icons/icon.png?raw=true">
+<img width=100 src="src-tauri/icons/icon.png">
 </p>
 
 <h1 align="center">Supabase Desktop App</h1>
