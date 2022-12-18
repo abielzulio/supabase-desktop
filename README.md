@@ -1,16 +1,14 @@
 <p align="center">
-<img width=100 src="https://github.com/abielzulio/supabase-desktop/blob/release/src-tauri/icons/icon.png?raw=true">
+<img width=100 src="src-tauri/icons/icon.png">
 </p>
 
 <h1 align="center">Supabase Desktop App</h1>
 
-
 <h3 align="center">
-Web-wrapped Supabase desktop app running on MacOS, Windows, and Linux using Tauri
+Web-wrapped Supabase desktop app running on macOS, Windows, and Linux powered by Tauri
 </h3>
 
 ![Individual user project screen](https://user-images.githubusercontent.com/7030944/208304068-f71b14f4-4d18-4134-b648-3eb9aae2f8c6.png)
-
 
 ## F.A.Q
 
