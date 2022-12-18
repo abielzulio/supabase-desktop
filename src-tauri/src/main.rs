@@ -3,18 +3,18 @@
     windows_subsystem = "windows"
 )]
 
-use tauri::{api::{shell}};
+
+use tauri::{api::{shell}, Context, utils::assets::EmbeddedAssets};
 use tauri::{Manager, CustomMenuItem, Menu, MenuItem, Submenu, AboutMetadata, MenuEntry};
 
-pub fn custom_window_menu() -> Menu {
-  let app_name: &str = "Supabase";
+pub fn custom_window_menu(ctx: &Context<EmbeddedAssets>) -> Menu {
   let menu = Menu::with_items([
 
     #[cfg(target_os = "macos")]
     MenuEntry::Submenu(Submenu::new(
-      app_name,
+      ctx.package_info().name.to_string(),
       Menu::with_items([
-        MenuItem::About(app_name.to_string(), AboutMetadata::default()).into(),
+        MenuItem::About(ctx.package_info().name.to_string(), AboutMetadata::default()).into(),
         MenuItem::Separator.into(),
         MenuItem::Services.into(),
         MenuItem::Separator.into(),
@@ -76,8 +76,9 @@ pub fn custom_window_menu() -> Menu {
 }
 
 fn main() {
+  let ctx = tauri::generate_context!();
   tauri::Builder::default()
-    .menu(custom_window_menu())
+    .menu(custom_window_menu(&ctx))
     .on_menu_event(|event| {
       match event.menu_item_id() {
         "github" => {
@@ -97,6 +98,6 @@ fn main() {
         _ => {}
       }
     })
-    .run(tauri::generate_context!())
+    .run(ctx)
     .expect("error while running tauri application");
 }
