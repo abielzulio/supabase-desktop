@@ -2,9 +2,9 @@
 name = "supabase"
 version = "0.0.0"
 description = "A Supabase Desktop App"
-authors = ["you"]
-license = ""
-repository = ""
+authors = ["Abiel Zulio M <abielzm@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/abielzulio/supabase-desktop"
 edition = "2021"
 rust-version = "1.57"
 
