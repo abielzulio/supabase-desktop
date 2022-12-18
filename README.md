@@ -4,11 +4,16 @@
 
 <h1 align="center">Supabase Desktop App</h1>
 
-<h3 align="center">
-Web-wrapped Supabase desktop app running on macOS, Windows, and Linux powered by Tauri
-</h3>
-
 ![Individual user project screen](https://user-images.githubusercontent.com/7030944/208304068-f71b14f4-4d18-4134-b648-3eb9aae2f8c6.png)
+
+
+## What is it?
+
+It's a cross-platform web-wrapped Supabase desktop app powered by Tauri. You can install it on your macOS, Windows (untested), or Linux (untested).
+
+![User projects screen](https://user-images.githubusercontent.com/7030944/208304046-65b29f9d-b455-495b-84a2-38a06800b25e.png)
+
+![User login screen](https://user-images.githubusercontent.com/7030944/208304004-6b0623a4-d88f-4c83-a9b8-bc67b354fe27.png)
 
 ## F.A.Q
 
@@ -16,13 +21,22 @@ Web-wrapped Supabase desktop app running on macOS, Windows, and Linux powered by
 
 Supabase is one of the essential dev apps that I need to open it daily. Opening it straight from the dock/app tray is just a lot quicker and easier than having to click the browser icon, type the URL or click the bookmark item. It's just more convenient.
 
-![User projects screen](https://user-images.githubusercontent.com/7030944/208304046-65b29f9d-b455-495b-84a2-38a06800b25e.png)
-
 ### Is it safe to login in your app? Do you store my login credentials?
 
 Yes, it is totally safe. No, I don't store your login credentials as I have no control. You can check the source code to make sure there is no data transferred between me and you.
 
-![User login screen](https://user-images.githubusercontent.com/7030944/208304004-6b0623a4-d88f-4c83-a9b8-bc67b354fe27.png)
+
+### I can't install. What's happening?
+
+![CleanShot 2022-12-18 at 23 29 58](https://user-images.githubusercontent.com/7030944/208308948-6e85409a-d3e8-46cb-b1fe-ca9adb463f9e.png)
+
+
+1. Close the warning pop-up by clicking the `Cancel` button
+1. Go to `System Settings > Privacy & Security`
+2. Click `Open Anyway` in the Supabase warning section
+
+![CleanShot 2022-12-18 at 23 34 32](https://user-images.githubusercontent.com/7030944/208309192-1c370c21-c45b-4004-ba4b-bf472427ce23.png)
+
 
 ## Recommended IDE Setup
 
