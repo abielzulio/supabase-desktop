@@ -62,7 +62,8 @@
         "center": true,
         "resizable": true,
         "title": "Supabase",
-        "width": 1000
+        "width": 1000,
+        "theme": "Dark"
       }
     ]
   }
