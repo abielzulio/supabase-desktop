@@ -61,6 +61,7 @@
     },
     "windows": [
       {
+        "label": "main",
         "userAgent": "chrome",
         "url": "https://app.supabase.com/projects",
         "fullscreen": false,
