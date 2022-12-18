@@ -2,9 +2,9 @@
 name = "supabase"
 version = "1.0.0"
 description = "A Supabase Desktop App"
-authors = ["you"]
-license = ""
-repository = ""
+authors = ["Abiel Zulio M <abielzm@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/abielzulio/supabase-desktop"
 edition = "2021"
 rust-version = "1.57"
 
@@ -16,7 +16,7 @@ tauri-build = { version = "1.2", features = [] }
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2", features = ["shell-all", "window-all"] }
+tauri = { version = "1.2", features = ["clipboard-all", "shell-all", "window-all"] }
 
 [features]
 # by default Tauri runs in production mode
