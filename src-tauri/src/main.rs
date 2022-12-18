@@ -25,6 +25,21 @@ pub fn custom_window_menu() -> Menu {
         MenuItem::Quit.into(),
       ]))),
 
+    MenuEntry::Submenu(Submenu::new(
+      "Edit",
+      Menu::with_items([
+        MenuItem::Undo.into(),
+        MenuItem::Redo.into(),
+        MenuItem::Separator.into(),
+        MenuItem::Cut.into(),
+        MenuItem::Copy.into(),
+        MenuItem::Paste.into(),
+        #[cfg(not(target_os = "macos"))]
+          MenuItem::Separator.into(),
+        MenuItem::SelectAll.into(),
+      ]),
+    )),
+
     #[cfg(not(target_os = "macos"))] {
       MenuEntry::Submenu(Submenu::new(
         "File",
