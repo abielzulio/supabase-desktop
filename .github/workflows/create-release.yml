@@ -1,11 +1,11 @@
-name: 'publish'
+name: 'create-release'
 on:
   push:
     branches:
       - release
 
 jobs:
-  publish-tauri:
+  create-release:
     strategy:
       fail-fast: false
       matrix:
