@@ -9,7 +9,7 @@
 
 ## What is it?
 
-It's a cross-platform web-wrapped Supabase desktop app powered by Tauri. You can install it on your macOS, Windows (untested), or Linux (untested).
+It's a cross-platform web-wrapped Supabase desktop app powered by Tauri. You can install it on your macOS, Windows, or Linux.
 
 ![User projects screen](https://user-images.githubusercontent.com/7030944/208304046-65b29f9d-b455-495b-84a2-38a06800b25e.png)
 
